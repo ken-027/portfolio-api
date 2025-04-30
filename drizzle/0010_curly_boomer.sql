@@ -1,0 +1,1 @@
+ALTER TABLE "order"."users" ALTER COLUMN "created_at" SET DEFAULT '2024-09-27 08:49:03.121';

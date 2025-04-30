@@ -1,0 +1,62 @@
+{
+  "id": "73603b45-75be-45c6-9f45-e9b1e14f3f34",
+  "prevId": "4dd83de1-687e-48c5-afd4-71f40c8984b1",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "order.users": {
+      "name": "users",
+      "schema": "order",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "username": {
+          "name": "username",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {
+    "public.popularity": {
+      "name": "popularity",
+      "schema": "public",
+      "values": [
+        "unknown",
+        "known",
+        "popular"
+      ]
+    }
+  },
+  "schemas": {
+    "order": "order"
+  },
+  "sequences": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}

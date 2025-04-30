@@ -1,0 +1,83 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1726495303430,
+      "tag": "0000_nasty_the_phantom",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1726496245091,
+      "tag": "0001_workable_marten_broadcloak",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1726836851454,
+      "tag": "0002_chubby_loki",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1726837429594,
+      "tag": "0003_same_dust",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1726837489270,
+      "tag": "0004_wise_ender_wiggin",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1726837811196,
+      "tag": "0005_famous_wiccan",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1726839028162,
+      "tag": "0006_lovely_lenny_balinger",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1726839173946,
+      "tag": "0007_misty_joshua_kane",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1726839923518,
+      "tag": "0008_cool_darkhawk",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1726840013561,
+      "tag": "0009_lucky_punisher",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1727426943130,
+      "tag": "0010_curly_boomer",
+      "breakpoints": true
+    }
+  ]
+}
