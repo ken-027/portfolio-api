@@ -13,12 +13,13 @@ import helmet from "helmet";
 // import logger from "@/middlewares/logger.middleware";
 import passport from "passport";
 import rateLimit from "@/config/rate-limiter";
+import visitorRoutes from "./routes/visitor.route";
 
 const prefixRoute = "/api/v1";
 
 export const app = express();
 
-app.set("trust proxy", true);
+// app.set("trust proxy", true);
 app.use(helmet());
 app.use(cors({ origin: ALLOWED_ORIGINS }));
 app.use(rateLimit);
@@ -34,6 +35,7 @@ app.use(passport.initialize());
 app.use(cookieParser());
 
 app.use(prefixRoute, userRoutes);
+app.use(prefixRoute, visitorRoutes);
 app.all("*", NotFound);
 app.use(errorHandler);
 

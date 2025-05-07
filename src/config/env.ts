@@ -18,6 +18,11 @@ export const EJS_TEMPLATE_ID = env.EJS_TEMPLATE_ID as string;
 export const EJS_PUBLIC_KEY = env.EJS_PUBLIC_KEY as string;
 export const EJS_PRIVATE_KEY = env.EJS_PRIVATE_KEY as string;
 
+// pushover
+export const PUSHOVER_USER = env.PUSHOVER_USER as string;
+export const PUSHOVER_TOKEN = env.PUSHOVER_TOKEN as string;
+export const HTTP_PROXY = env.HTTP_PROXY as string;
+
 export const ALLOWED_ORIGINS = env.ALLOWED_ORIGINS?.replace(/\s+/g, "")?.split(
     ",",
 );
