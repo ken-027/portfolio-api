@@ -7,6 +7,13 @@ const rateLimit = rateLimitPackage({
     legacyHeaders: false,
 });
 
+export const visitorLimit = rateLimitPackage({
+    windowMs: 60 * 1000, // per minute
+    limit: 2,
+    standardHeaders: true,
+    legacyHeaders: false,
+});
+
 export const resourceLimit = rateLimitPackage({
     windowMs: 60 * 1000, // per minute
     limit: 10,
