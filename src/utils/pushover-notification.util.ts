@@ -1,8 +1,7 @@
 // @ts-expect-error @ts-ignore
 import Push from "pushover-notifications";
 import { PUSHOVER_TOKEN, PUSHOVER_USER } from "@/config/env";
-import moment from "moment";
-
+import { now } from "./moment-timezone.util";
 export default class PushoverNotificationUtil {
     static visitor = async (ip: string, agent: string) => {
         const pushover = new Push({
@@ -17,10 +16,10 @@ export default class PushoverNotificationUtil {
         });
 
         const msg = {
-            message: `New visitor ${ip}\n\nDevice: ${agent} \n\nDate: ${moment().format("MMMM Do YYYY, h:mm:ss a")}`,
+            message: `New visitor ${ip}\n\nDevice: ${agent} \n\nDate: ${now.format("MMMM Do YYYY, h:mm:ss a")}`,
             title: "Portfolio visitor",
             sound: "magic",
-            device: agent,
+            device: "any",
             priority: 0,
         };
 

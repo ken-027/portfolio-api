@@ -9,9 +9,10 @@ const rateLimit = rateLimitPackage({
 
 export const visitorLimit = rateLimitPackage({
     windowMs: 60 * 1000, // per minute
-    limit: 2,
+    limit: 1,
     standardHeaders: true,
     legacyHeaders: false,
+    keyGenerator: (req) => req.ip as string,
 });
 
 export const resourceLimit = rateLimitPackage({
